@@ -70,9 +70,11 @@ function showTransactions(id){
   const customer = customers.find((customer) =>customer.id === id);
   console.log(customer.transactions);
 }
-deposit(1, 1500);
-withdraw(1, 500); 
+//deposit(1, 1500);
+withdraw(1, 6000); 
 checkBalance(1)
-deposit(1, 1000);
-checkBalance(1)
+deposit(2, 1000);
+checkBalance(2)
+withdraw(2,6000)
 showTransactions(1)
+showTransactions(2)
