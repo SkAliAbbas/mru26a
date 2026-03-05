@@ -1,4 +1,4 @@
-// export function add(a,b){
+// export default function add(a,b){
 //     return a+b
 // }
 // export function subtract(a,b){
@@ -8,8 +8,10 @@
 function add(a,b){
     return a+b
 }
-function subtract(a,b){
-    return a-b
-}
+// function subtract(a,b){
+//     return a-b
+// }
 
-export{add,subtract}
+// export{add,subtract}
+
+export default{add}
