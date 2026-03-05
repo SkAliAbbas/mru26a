@@ -38,10 +38,16 @@ function deposit(id, amount) {
     }
   });
 }
-
+//Check if sufficient balance
+//Deduct amount
+//Add transaction
 function withdraw(id,amount){
   customers = customers.map((customer) => {
     if(customer.id === id){
+      if(customer.balance < amount){
+        console.log("Insufficient balance");
+        return customer;
+      }
       return {
         ...customer,
         balance: customer.balance - amount,
